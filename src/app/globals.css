@@ -1,2 +1,9 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: cupcake --default;
+}
+
+.card:where(.card-border) {
+    border: var(--border) solid var(--color-base-300);
+}
+
